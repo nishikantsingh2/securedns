@@ -14,8 +14,8 @@ export default function ProtectedPage() {
     useEffect(() => {
      
       if (user[0] === null) {
-        console.log("no user")
-        console.log(user)
+        // console.log("no user")
+        // console.log(user)
           
         router.push("/login")
       } else {

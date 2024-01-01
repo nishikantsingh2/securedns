@@ -8,6 +8,7 @@ import { useRouter } from "next/router";
 import axios from 'axios';
 import { base_url } from "@/util/baseUrl";
 import Head from "next/head";
+import { ToastContainer, toast } from 'react-toastify';
 
 const Login = () => {
 
@@ -39,7 +40,7 @@ const Login = () => {
                 console.log(response);
             } catch (error) {
                 console.error(error);
-                alert('Username or password not matched')
+                toast('Username or password not matched')
             }
 
 
@@ -82,6 +83,18 @@ const Login = () => {
 
 
       </Head>
+      <ToastContainer
+      position="top-center"
+      autoClose={5000}
+      hideProgressBar={false}
+      newestOnTop={false}
+      closeOnClick
+      rtl={false}
+      pauseOnFocusLoss
+      draggable
+      pauseOnHover
+      theme="dark"
+      />
             <div className="row bg">
                 {/* <div className="col-lg-4 col-sm-12"></div> */}
                 <h2 className="login-title header1 padding-50">CyberPeace Secure Dns</h2>

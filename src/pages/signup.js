@@ -1,7 +1,10 @@
+import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { auth, db } from "@/firebase/firebase";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { useFormik } from "formik";
-import React, { useContext, useEffect } from "react";
+import { useContext, useEffect } from "react";
 import * as Yup from 'yup';
 import { AuthContext } from "../context/AuthContext";
 import { useRouter } from "next/router";
@@ -85,7 +88,7 @@ const Signup = () => {
 
 
                     });
-                    alert("User created ")
+                    toast("User created ")
                     router.push("/login")
 
                 })
@@ -93,7 +96,7 @@ const Signup = () => {
                     // setError(true);
                    console.log(error);
                
-                   alert('Email is already exsit ')
+                   toast('Email is already exsit ')
                    
                 });
 
@@ -119,7 +122,18 @@ const Signup = () => {
 
 
       </Head>
-
+      <ToastContainer
+      position="top-center"
+      autoClose={5000}
+      hideProgressBar={false}
+      newestOnTop={false}
+      closeOnClick
+      rtl={false}
+      pauseOnFocusLoss
+      draggable
+      pauseOnHover
+      theme="dark"
+      />
             <div className="row bg">
 
             <h2 className="login-title header1 padding-50">CyberPeace Secure Dns</h2>
