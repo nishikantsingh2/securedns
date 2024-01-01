@@ -83,12 +83,13 @@ const Login = () => {
 
       </Head>
             <div className="row bg">
-                <div className="col-lg-4 col-sm-12"></div>
-                <div className="col-lg-4 col-sm-12 padding-50">
+                {/* <div className="col-lg-4 col-sm-12"></div> */}
+                <h2 className="login-title header1 padding-50">CyberPeace Secure Dns</h2>
+                <div className="col-lg-12 col-sm-12 padding-50">
                     <div >
                         <form onSubmit={formik.handleSubmit}>
                             <div className="login-title ">
-                                <h2 className="login-title ">Secure Dns</h2>
+                                <h2 className="login-title ">Login</h2>
                             </div>
                             <div className="form-field">
                                 <input
@@ -106,12 +107,14 @@ const Login = () => {
                                     onChange={formik.handleChange("password")}
                                 />
                             </div>
-                            <div className="form-field">
+                            <div className="form-field mt-2 mb-2 ">
                                <a href="/signup" style={{color:'#03feff'}}>Don't have account ?</a >
                             </div>
                             <div className="form-field">
-                                <button className="btn" type="submit">Log in</button>
+                                {/* <button className="btn" type="submit">Log in</button> */}
+                               
                             </div>
+                            <button className="themebutton1" type="submit">Log in</button>
                         </form>
                     </div>
                 </div>

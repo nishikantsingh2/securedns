@@ -1,17 +1,25 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+/* @import url("https://fonts.googleapis.com/css?family=Lato:400,700"); */
 .bg {
-  background-image: url('/img/background.jpg');
-  position: fixed;
-  left: 12PX;
-  top: 0;
-  width: 100%;
+  background-image: url('/img/background5.jpg');
+  /* position: fixed; */
+  /* left: 12PX; */
+  /* top: 0; */
+  /* width: auto;
   height: 100%;
-  background-size: cover;
-  filter: blur(0px);
+  background-size: cover; */
+
+  background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    /* padding-top: 290px; */
+    padding-bottom: 350px;
+
 }
 
+
+
 body {
-  font-family: 'Lato', sans-serif;
+  /* font-family: 'Lato', sans-serif; */
   color: #cdc2c2;
   
   justify-content: center;
@@ -26,6 +34,11 @@ form {
   text-align:center;
   width: 350px;
   position: relative;
+  padding: 20px;
+    background-color: #00000047;
+    border-radius: 41px;
+    backdrop-filter: blur(56px);
+    margin: 0 auto;
 }
 form .form-field::before {
   font-size: 20px;
@@ -67,10 +80,10 @@ form input {
   width: 100%;
   outline: none;
   background-color: #fff;
-  border-radius: 4px;
+  border-radius: 10px;
   border: none;
   display: block;
-  padding: 0.9rem 0.7rem;
+  padding: 0.4rem 0.7rem;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   font-size: 17px;
   color: #4A4A4A;
@@ -96,5 +109,57 @@ form .btn {
     padding-bottom: 10px;
 }
 .padding-50{
-  padding: 100px;
+  padding-top: 100px;
+  margin: 0 auto;
+}
+
+.themebutton1 {
+  font-size: 14px;
+    color: #fff;
+    background-color: #7453fc;
+    border: 1px solid #7453fc;
+    padding: 12px 30px;
+    display: inline-block;
+    border-radius: 25px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.themebutton1:after {
+  width: 78%;
+  height: 2px;
+  background-color: #fff;
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.themebutton1:hover{
+  background-color: #fff;
+  color: #7453fc;
+  border: 1px solid #fff;
+}
+
+.header1 {
+  font-size: 50px;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  color: #b393d3;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px #957dad,
+               1px 2px 0px #957dad,
+               1px 3px 0px #957dad,
+               1px 4px 0px #957dad,
+               1px 5px 0px #957dad,
+               1px 6px 0px #957dad,
+               1px 10px 5px rgba(16, 16, 16, 0.5),
+               1px 15px 10px rgba(16, 16, 16, 0.4),
+               1px 20px 30px rgba(16, 16, 16, 0.3),
+               1px 25px 50px rgba(16, 16, 16, 0.2);
 }

@@ -21,6 +21,10 @@ const Signup = () => {
 
         email: Yup.string().email("Email should be valid").required("Email is required"),
         password: Yup.string().required("Password is required").min(6, 'Password must be at least 6 characters long'),
+        
+        confirmPassword: Yup.string()
+            .required('Confirm Password is required')
+            .oneOf([Yup.ref('password'), null], 'Passwords must match'),
         mobile: Yup.string().required("Mobile number is required").matches(/^\d{10}$/, "Mobile number must be 10 digits"),
         firstname: Yup.string()
             .min(2, 'Too Short!')
@@ -81,13 +85,15 @@ const Signup = () => {
 
 
                     });
+                    alert("User created ")
+                    router.push("/login")
 
                 })
                 .catch((error) => {
                     // setError(true);
                    console.log(error);
                
-                   alert('Email is already exist ')
+                   alert('Email is already exsit ')
                    
                 });
 
@@ -116,15 +122,15 @@ const Signup = () => {
 
             <div className="row bg">
 
-
-                <div className="col-lg-4 col-sm-12"></div>
-                <div className="col-lg-4 col-sm-12 padding-50">
+            <h2 className="login-title header1 padding-50">CyberPeace Secure Dns</h2>
+                {/* <div className="col-lg-4 col-sm-12"></div> */}
+                <div className="col-lg-12 col-sm-12 padding-50">
                     <div >
                         <form onSubmit={formik.handleSubmit}>
                             <div className="login-title ">
                                 <h2 className="login-title ">Sign Up</h2>
                             </div>
-                            <div className="error " style={{ textAlign: "right",color:'#01fcfd' }}>
+                            <div className="error " style={{ textAlign: "right",color:'#ff0000',fontWeight:'bolder',fontSize: '10px' }}>
                             {formik.touched.firstname && formik.errors.firstname}
                             </div>
                             <div className="form-field">
@@ -136,7 +142,7 @@ const Signup = () => {
                                 />
                                
                             </div>
-                            <div className="error " style={{ textAlign: "right",color:'#01fcfd' }}>
+                            <div className="error " style={{ textAlign: "right",color:'#ff0000',fontWeight:'bolder',fontSize: '10px' }}>
                             {formik.touched.lastname && formik.errors.lastname}
                             </div>
                             <div className="form-field">
@@ -147,7 +153,7 @@ const Signup = () => {
                                     onChange={formik.handleChange("lastname")}
                                 />
                             </div>
-                            <div className="error " style={{ textAlign: "right",color:'#01fcfd' }}>
+                            <div className="error " style={{ textAlign: "right",color:'#ff0000',fontWeight:'bolder',fontSize: '10px' }}>
                             {formik.touched.email && formik.errors.email}
                             </div>
                             <div className="form-field">
@@ -158,7 +164,7 @@ const Signup = () => {
                                     onChange={formik.handleChange("email")}
                                 />
                             </div>
-                            <div className="error " style={{ textAlign: "right",color:'#01fcfd' }}>
+                            <div className="error " style={{ textAlign: "right",color:'#ff0000',fontWeight:'bolder',fontSize: '10px' }}>
                             {formik.touched.mobile && formik.errors.mobile}
                             </div>
                             <div className="form-field">
@@ -171,7 +177,9 @@ const Signup = () => {
                                  
                             </div>
 
-                            <div className="error " style={{ textAlign: "right",color:'#01fcfd' }}>
+                            
+
+                            <div className="error " style={{ textAlign: "right",color:'#ff0000',fontWeight:'bolder',fontSize: '10px' }}>
                             {formik.touched.password && formik.errors.password}
                             </div>
                             <div className="form-field">
@@ -183,15 +191,31 @@ const Signup = () => {
 
                                 />
                             </div>
+                            <div className="error " style={{ textAlign: "right",color:'#ff0000',fontWeight:'bolder',fontSize: '10px' }}>
+                            {formik.touched.confirmPassword && formik.errors.confirmPassword}
+                            </div>
+                            <div className="form-field">
+                                <input
+                                    type="password"
+                                    placeholder="Confirm Password"
+
+                                    onChange={formik.handleChange("confirmPassword")}
+
+                                />
+                            </div>
 
 
 
                             <div className="form-field mt-3 mb-3">
                                 <a href="/login" style={{ color: '#03feff' }}>Already have account ?</a>
                             </div>
-                            <div className="form-field">
+                            {/* <div className="form-field">
                                 <button className="btn" type="submit">Sign Up</button>
-                            </div>
+                            </div> */}
+                         
+                            <button className="themebutton1" type="submit">Sign Up</button>
+                           
+                            
                             
 
                         </form>
