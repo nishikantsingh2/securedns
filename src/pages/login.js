@@ -9,6 +9,7 @@ import axios from 'axios';
 import { base_url } from "@/util/baseUrl";
 import Head from "next/head";
 import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
 
