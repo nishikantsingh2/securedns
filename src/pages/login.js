@@ -37,7 +37,7 @@ const Login = () => {
                 const user = response.data;
 
                 dispatch({ type: "LOGIN", payload: user })
-                router.push('/')
+                router.push('/dashboard')
                 console.log(response);
             } catch (error) {
                 console.error(error);
@@ -61,7 +61,7 @@ const Login = () => {
 
         if (user) {
             console.log("user present")
-            router.push("/")
+            router.push("/dashboard")
 
         } else {
             console.log("No present")

@@ -5,7 +5,7 @@ import Head from 'next/head'
 import { useContext, useEffect, useState } from 'react'
 import { AuthContext } from '../context/AuthContext'
 import { useRouter } from 'next/router'
-import ProtectedPage from '@/Authentication/protected-page'
+// import ProtectedPage from '@/Authentication/protected-page'
 import { Field, Form, Formik, useFormik } from 'formik'
 
 import Script from 'next/script'
@@ -83,14 +83,9 @@ export default function Home() {
         <meta charset="utf-8" />
         <meta name="author" content="Secure Dns" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
-
-
         <title>Cyberpeace Secure Dns</title>
-
-
       </Head>
-      <ProtectedPage ></ProtectedPage>
+      {/* <ProtectedPage ></ProtectedPage> */}
 
       {/* <!-- ***** Preloader Start ***** --> */}
       {/* <div id="js-preloader" className="js-preloader">
