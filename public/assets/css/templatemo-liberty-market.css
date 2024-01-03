@@ -26,7 +26,7 @@ font & reset css
 --------------------------------------------- 
 */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900");
-@import url("https://fonts.google.com/specimen/Chakra+Petch:100,200,300,400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Chakra Petch");
 @import url("https://fonts.google.com/specimen/DM+Sans?query=dm+sans:100,200,300,400,500,600,700,800,900");
 /* 
 
@@ -96,6 +96,7 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Chakra Petch';
   margin-top: 0px;
   margin-bottom: 0px;
   color: #fff;
@@ -126,7 +127,7 @@ html,
 body {
   background: #fff;
   /* font-family: 'Roboto', sans-serif; */
-  font-family: 'Chakrapetch, sans-serif';
+  /* font-family: 'Chakrapetch, sans-serif'; */
 }
 
 ::selection {
