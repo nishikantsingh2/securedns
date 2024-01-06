@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
-              <p>©CyberPeace 2024. All Right Reserved.
+              <p>© Powered by CyberPeace
               </p>
             </div>
           </div>

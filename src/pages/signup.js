@@ -119,7 +119,7 @@ const Signup = () => {
 
 
         <title>Cyberpeace Secure Dns</title>
-
+        <link rel="icon" href="/favicon.ico" />
 
       </Head>
       <ToastContainer

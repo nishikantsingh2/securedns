@@ -16,12 +16,13 @@ const Dashboard = () => {
     return (
 
         <>
-        <ProtectedPage />
+       {user[0] === null?<ProtectedPage />:<>
             <Head>
                 <meta charset="utf-8" />
                 <meta name="author" content="Secure Dns" />
                 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
                 <title>Cyberpeace Secure Dns</title>
+                <link rel="icon" href="/favicon.ico" />
             </Head>
 
             {/* <!-- ***** Header Area Start ***** --> */}
@@ -97,7 +98,8 @@ const Dashboard = () => {
                                 <div className="mb-2">
                                 <h2>Your Gateway to Safe and Reliable Browsing</h2>
                                 </div>
-                           <p> At Secure DNS, we prioritize your online security and privacy. Our cutting-edge Domain Name System (DNS) services ensure a safer and more secure internet experience for you. Whether you're a casual internet user or a business professional, our Secure DNS service is designed to provide fast, reliable, and private domain resolution.</p> 
+                           <p> At CyberPeace Secure DNS, we prioritize your online security and privacy. Our cutting-edge Domain Name System (DNS) services ensure a safer and more secure internet experience for you. Whether you're a casual internet user or a business professional, our CyberPeace Secure DNS service is designed to provide fast, reliable, and private domain resolution.
+</p> 
                             {/* <div className="row" style={{justifyContent: "center"}} >
                                    
                                     <div className="col-6" >
@@ -312,7 +314,7 @@ const Dashboard = () => {
             <Script src="/assets/js/tabs.js" strategy="beforeInteractive" />
             <Script src="/assets/js/popup.js" strategy="beforeInteractive" />
             <Script src="/assets/js/custom.js" strategy="beforeInteractive" />
-
+</> }
         </>
     )
 }

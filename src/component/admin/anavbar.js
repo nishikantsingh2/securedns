@@ -22,12 +22,12 @@ const Anavbar =()=>{
               <div className="col-12">
                 <nav className="main-nav">
                   {/* <!-- ***** Logo Start ***** --> */}
-                  {/* <a href="index.html" className="logo">
-                          <img src="assets/images/logo.png" alt="" />
-                      </a> */}
+                  <a href="/" className="logo">
+                        <img src="/assets/images/logo/logo.png" alt="" />
+                    </a>
                   {/* <!-- ***** Logo End ***** --> */}
                   {/* <!-- ***** Menu Start ***** --> */}
-                  <h2 style={{ color: '#7453fc', paddingTop: '7px' }}>Secure DNS</h2>
+                  {/* <h2 style={{ color: '#7453fc', paddingTop: '7px' }}>Secure DNS</h2> */}
                   <ul className="nav">
                   <li><a href="/" >Home</a></li>
                     <li><a href="/" >Dashboard</a></li>

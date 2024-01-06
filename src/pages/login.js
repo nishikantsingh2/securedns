@@ -81,7 +81,7 @@ const Login = () => {
 
 
         <title>Cyberpeace Secure Dns</title>
-
+        <link rel="icon" href="/favicon.ico" />
 
       </Head>
       <ToastContainer
@@ -104,6 +104,7 @@ const Login = () => {
                         <form onSubmit={formik.handleSubmit}>
                             <div className="login-title ">
                                 <h2 className="login-title ">Login</h2>
+                                
                             </div>
                             <div className="form-field">
                                 <input

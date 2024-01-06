@@ -7,12 +7,13 @@ import { AuthContext } from '../context/AuthContext'
 import { useRouter } from 'next/router'
 // import ProtectedPage from '@/Authentication/protected-page'
 import { Field, Form, Formik, useFormik } from 'formik'
-
+// import "@lottiefiles/lottie-player";
 import Script from 'next/script'
 // import { NextApiRequest, NextApiResponse } from 'next';
 // import WGEasyWrapper from 'wg-easy-wrapper';
 const WGEasyWrapper = require('wg-easy-wrapper');
 import image from "../../public/img/background5.jpg"
+import Footer from '@/component/footer'
 
 export default function Home() {
   const { currentUser } = useContext(AuthContext)
@@ -81,9 +82,11 @@ export default function Home() {
     <>
       <Head>
         <meta charset="utf-8" />
+        
         <meta name="author" content="Secure Dns" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <title>Cyberpeace Secure Dns</title>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* <ProtectedPage ></ProtectedPage> */}
 
@@ -100,9 +103,9 @@ export default function Home() {
   </div> */}
       {/* <!-- ***** Preloader End ***** --> */}
 
-    
-     
-      <Navbar/>
+
+
+      <Navbar />
       {/* <!-- ***** Header Area End ***** --> */}
 
       {/* <!-- ***** Main Banner Area Start ***** --> */}
@@ -112,8 +115,8 @@ export default function Home() {
             <div className="col-lg-6 align-self-center">
               <div className="header-text">
                 {/* <h6>Welcome</h6> */}
-                <h2>Welcome</h2>
-                <p>Secure DNS is a set of technologies that enhance the security and privacy of the Domain Name System (DNS), which is crucial for translating domain names (like www.google.com) into IP addresses that computers understand.</p>
+                <h2>Your Shield Against Cyber Threats</h2>
+                <p>CyberPeace Secure DNS is a secure, cutting-edge Domain Name System (DNS) infrastructure designed to prevent cyber threats and protect against attacks such as phishing, malware distribution, and ransomware with the aim of DNS resolution based threat investigation and monitoring, keeping the security as first priority in mind to provide a real time DNS based secure Cyberspace.</p>
                 <div className="buttons">
                   {/* <div className="border-button">
                 <a href="explore.html">Explore Top NFTs</a>
@@ -144,17 +147,14 @@ export default function Home() {
       <div className="create-nft " id='about' >
         <div className="container">
           <div className="row">
-            <div className="col-lg-8">
+            <div className="col-lg-12">
               <div className="section-heading">
-                <div className="line-dec"></div>
+                <div className="line-dec first-item"></div>
                 <h2>About us</h2>
+                <p>CyberPeace Secure DNS Team is composed of seasoned experts in the field of cybersecurity and network infrastructure. With a collective passion for technological innovation and a commitment to safeguarding digital assets, we strive to empower our users with the tools they need to navigate the digital landscape securely.</p>
               </div>
             </div>
-            <div className="col-lg-4">
-              <div className="main-button">
-                {/* <a href="create.html">Create Your NFT Now</a> */}
-              </div>
-            </div>
+
             <div className="col-lg-12">
               <div className="item first-item">
                 {/* <div className="number">
@@ -163,21 +163,21 @@ export default function Home() {
                 {/* <div className="icon">
               <img src="assets/images/icon-02.png" alt=""/>
             </div> */}
-                <h4> Secure DNS</h4>
-                <p>Welcome to Secure DNS Solutions, your trusted partner in fortifying the foundation of your digital security. At Secure DNS, we are dedicated to revolutionizing your online experience by providing robust and reliable Domain Name System (DNS) solutions. Our commitment lies in delivering a safer, faster, and more secure internet for individuals, businesses, and organizations around the globe.</p>
+                <h2> Our Mission</h2>
+                <p>Our mission is to elevate the standards of digital security by offering state-of-the-art DNS services. We aim to provide a unified solution towards peaceful cyberspace against a wide range of threats, ransomware, phishing, and malware attacks, by utilizing cutting-edge technologies with AI-powered real-time threat intelligence. We are committed to combat against illegal distribution of non-prescribed drugs and CSAM and to ensure the safety and security of our clients' networks and data.</p>
               </div>
             </div>
-            <span style={{height:'50px'}}></span>
-            <div className="col-lg-6">
+            <span style={{ height: '50px' }}></span>
+            {/* <div className="col-lg-6">
               <div className="item second-item ">
                 <div className="number">
-                  {/* <h6>2</h6> */}
+           
                 </div>
                 <div className="icon">
                   <img src="assets/images/icon-04.png" alt="" />
                 </div>
-                <h4>Our Mission</h4>
-                <p>Our mission at Secure DNS Solutions is to elevate the standards of digital security by offering state-of-the-art DNS services. We aim to create an online environment where users can navigate the internet with confidence, knowing that their connections are protected against cyber threats and privacy invasions.</p>
+                <h4>About us</h4>
+                <p>CyberPeace Secure DNS Team is composed of seasoned experts in the field of cybersecurity and network infrastructure. With a collective passion for technological innovation and a commitment to safeguarding digital assets, we strive to empower our users with the tools they need to navigate the digital landscape securely.</p>
               </div>
             </div>
             <div className="col-lg-6">
@@ -186,11 +186,45 @@ export default function Home() {
                   
                   <img src="assets/images/icon-06.png" alt="" />
                 </div>
-                <h4>Who We Are:</h4>
-                <p>Secure DNS Solutions is composed of a team of seasoned experts in the field of cybersecurity and network infrastructure. With a collective passion for technological innovation and a commitment to safeguarding digital assets, we strive to empower our users with the tools they need to navigate the digital landscape securely.</p>
+                <h4> Our Mission</h4>
+                <p>Our mission is to elevate the standards of digital security by offering state-of-the-art DNS services. We aim to provide a unified solution towards peaceful cyberspace against a wide range of threats, ransomware, phishing, and malware attacks, by utilizing cutting-edge technologies with AI-powered real-time threat intelligence. We are committed to combat against illegal distribution of non-prescribed drugs and CSAM and to ensure the safety and security of our clients' networks and data.</p>
+             </div>
+            </div> */}
+  <div className="col-lg-6" >
+              <div className="item  ">
+                <div className="number">
+
+                </div>
+
+                <img src='/img/feature.jpg' alt='feature' height='350px' style={{ borderRadius: '20px' }}></img>
+
               </div>
             </div>
-            
+            <div className="col-lg-6" style={{paddingLeft:'80px'}}>
+              <div className="item second-item " >
+                <div className="number">
+
+                </div>
+
+                <h2>Features</h2>
+                <ui className='feature mt-2'  >
+                  <li > DNSSEC Enabled </li>
+                  <li> Malicious url and Phishing Protection</li>
+                  <li> Ransomware mitigation</li>
+                  <li> Encrypted DNS Queries - DoT, DoH, DNS Crypt</li>
+                  <li> NX-Domain redirect</li>
+                  <li> DDoS Protection</li>
+                  <li> Preventing Illegal Distribution of Non-Prescribed Drugs</li>
+                  <li> Combatting CSAM & Incitements to Violence Prevention</li>
+                  <li> Real-time Threat Intelligence Powered by AI</li>
+
+
+                </ui>
+              </div>
+            </div>
+          
+
+
           </div>
         </div>
       </div>
@@ -512,7 +546,7 @@ export default function Home() {
       </div>
     </div>
   </div> */}
-
+{/* 
       <footer>
         <div className="container">
           <div className="row">
@@ -522,21 +556,22 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </footer>
+      </footer> */}
+      <Footer/>
 
 
       {/* <!-- Scripts --> */}
       {/* <!-- Bootstrap core JavaScript --> */}
       <Script src="/vendor/jquery/jquery.min.js" strategy="beforeInteractive" />
       <Script src="/vendor/bootstrap/js/bootstrap.min.js" strategy="beforeInteractive" />
-
+      
       <Script src="/assets/js/isotope.min.js" strategy="beforeInteractive" />
       <Script src="/assets/js/owl-carousel.js" strategy="beforeInteractive" />
 
       <Script src="/assets/js/tabs.js" strategy="beforeInteractive" />
       <Script src="/assets/js/popup.js" strategy="beforeInteractive" />
       <Script src="/assets/js/custom.js" strategy="beforeInteractive" />
-
+    
 
     </>
   )

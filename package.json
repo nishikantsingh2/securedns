@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@lottiefiles/lottie-player": "^2.0.2",
     "axios": "^1.6.3",
     "firebase": "^10.7.1",
     "formik": "^2.4.5",

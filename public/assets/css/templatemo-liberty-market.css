@@ -81,7 +81,8 @@ header, nav, section, article, aside, footer, hgroup {
 }
 
 html, body {
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Dmsans, sans-serif';
   
   font-weight: 400;
   background-color: #1e1e1e;
@@ -101,6 +102,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0px;
   color: #fff;
   font-weight: 700;
+  margin-bottom: 10px;
 }
 
 ul {
@@ -108,9 +110,10 @@ ul {
 }
 
 p {
-  font-size: 15px;
+  font-size: 20px;
   line-height: 30px;
   color: #fff;
+  text-align: justify;
 }
 
 img {
@@ -433,7 +436,7 @@ Header Style
 .header-area .main-nav .nav li a {
   display: block;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 17px;
   text-transform: capitalize;
   color: #2a2a2a;
   -webkit-transition: all 0.3s ease 0s;
@@ -1243,6 +1246,7 @@ footer {
 
 footer p {
   color: #fff;
+  text-align: center;
 }
 
 footer p a {
