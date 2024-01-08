@@ -98,12 +98,14 @@ const Login = () => {
       />
             <div className="row bg">
                 {/* <div className="col-lg-4 col-sm-12"></div> */}
-                <h2 className="login-title header1 padding-50">CyberPeace Secure Dns</h2>
+                {/* <h2 className="login-title header1 padding-50">CyberPeace Secure Dns</h2> */}
+                
                 <div className="col-lg-12 col-sm-12 padding-50">
                     <div >
                         <form onSubmit={formik.handleSubmit}>
                             <div className="login-title ">
-                                <h2 className="login-title ">Login</h2>
+                                {/* <h2 className="login-title ">Login</h2> */}
+                                <img src="/assets/images/logo/logo-dark.png" alt="logo"></img>
                                 
                             </div>
                             <div className="form-field">

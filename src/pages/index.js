@@ -200,8 +200,8 @@ export default function Home() {
 
               </div>
             </div>
-            <div className="col-lg-6" style={{paddingLeft:'80px'}}>
-              <div className="item second-item " >
+            <div className="col-lg-6" style={{paddingLeft:'50px',textAlign:'left'}}>
+              <div className="item second-item "style={{textAlign:'left'}} >
                 <div className="number">
 
                 </div>
